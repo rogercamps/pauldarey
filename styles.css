@@ -1,0 +1,100 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.navbar {
+  background-color: #A0A0A0	;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+  
+  padding: 14px 16px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #B8B8B8	;
+}
+
+ul { 
+  /* color: #aa9c9c;
+  list-style-type: none ;
+  text-decoration: none; */
+  /* text-align: center; */
+  
+}
+
+li {
+  display: inline;
+  /* float: right; */
+}
+
+.soundcloud:active {
+  color: black;
+}
+li a {
+  text-decoration: none;
+  padding: 8px;
+  /* background-color: grey; */
+}
+
+#soundcloud {
+  text-decoration: none;
+}
+h1 {
+  padding: 15px;
+  text-align: center;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.music {
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #A0A0A0	;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.small-hero {
+
+}
+.medium-hero {
+
+}
+.large-hero {
+position: relative;
+max-width: 20%;
+}
+/* 
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+} 
+*/
+
+
+/*  USE THIS TO HIDE THE BURGER MENU WHEN IS BIGGER THAN MOBILE ?
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+ */
