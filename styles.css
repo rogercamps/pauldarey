@@ -1,54 +1,71 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
+  margin: 0%;
+  padding: 0%;
+  color: yellow;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
-  background-color: #A0A0A0	;
+  background-color: black;
+  color: #A0A0A0;
+
   margin: 0;
-  padding: 0;
   float: left;
   width: 100%;
 }
 
 .navbar a {
-  color: black;
-  text-decoration: none;
-  
-  padding: 14px 16px;
+  color: #A0A0A0;
+  padding: 2%;
   font-size: 17px;
   text-align: center;
 }
 
 .navbar a:hover {
-  background-color: #B8B8B8	;
+  background-color: #B8B8B8;
 }
 
-ul { 
-  /* color: #aa9c9c;
-  list-style-type: none ;
-  text-decoration: none; */
-  /* text-align: center; */
-  
+footer {
+  background-color: #A0A0A0	;
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+/* .large-hero-img {
+  position: relative;
+  max-width: 100%;
+  } */
+
+.body-margin {
+  margin: 5%;
+}
+
+input {
+  border-radius: 5px;
 }
 
 li {
   display: inline;
-  /* float: right; */
+}
+
+li a {
+  padding: 8px;
+  /* background-color: grey; */
 }
 
 .soundcloud:active {
   color: black;
 }
-li a {
-  text-decoration: none;
-  padding: 8px;
-  /* background-color: grey; */
-}
 
-#soundcloud {
-  text-decoration: none;
-}
 h1 {
   padding: 15px;
   text-align: center;
@@ -63,32 +80,53 @@ div {
   text-decoration: none;
 }
 
-footer {
-  background-color: #A0A0A0	;
-  margin: 0;
-  padding: 0;
-  float: left;
-  width: 100%;
-  text-align: center;
-}
-
 .small-hero {
 
 }
+
 .medium-hero {
 
 }
+
 .large-hero {
-position: relative;
-max-width: 20%;
+  background-repeat: no-repeat; 
 }
-/* 
-@media only screen and (max-width: 600px) {
+
+.media-players {
+  display: inline-block;
+}
+@media (max-width: 600px) {
   body {
-    background-color: lightblue;
+    color: white;
   }
-} 
-*/
+
+  .large-hero {
+    background-image: url(assets/images/emy6-S.jpg);
+    padding: 100px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 780px) {
+  body {
+    color: red;
+  }
+  .large-hero {
+    background-image: url(assets/images/emy6-M.jpg);
+    padding: 200px;
+  }
+}
+
+@media (min-width: 781px) {
+  body {
+    color: green;
+  }
+  .large-hero {
+    background-image: url(assets/images/emy6-L.jpg);
+    padding: 300px;
+  }
+
+}
+
 
 
 /*  USE THIS TO HIDE THE BURGER MENU WHEN IS BIGGER THAN MOBILE ?
@@ -98,3 +136,5 @@ max-width: 20%;
   }
 }
  */
+
+
