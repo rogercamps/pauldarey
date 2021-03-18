@@ -14,7 +14,6 @@ a {
 .navbar {
   background-color: black;
   color: #A0A0A0;
-
   margin: 0;
   float: left;
   width: 100%;
@@ -95,14 +94,18 @@ div {
 .media-players {
   display: inline-block;
 }
+
+
 @media (max-width: 600px) {
   body {
     color: white;
   }
-
   .large-hero {
     background-image: url(assets/images/emy6-S.jpg);
     padding: 100px;
+  }
+  #more {
+    display: none;
   }
 }
 
@@ -113,6 +116,9 @@ div {
   .large-hero {
     background-image: url(assets/images/emy6-M.jpg);
     padding: 200px;
+  }
+  #more {
+    display: none;
   }
 }
 
