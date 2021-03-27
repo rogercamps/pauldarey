@@ -79,7 +79,7 @@ div {
   text-decoration: none;
 }
 
-.small-hero {
+/* .small-hero {
 
 }
 
@@ -89,12 +89,27 @@ div {
 
 .large-hero {
   background-repeat: no-repeat; 
-}
+} */
 
 .media-players {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  align-items: center;
+}
+.media-player {
+  /* display: flex; */
+  /* justify-content: center; */
+  margin: 10px;
+  float: left;
+  /* align-items: center; */
+  
 }
 
+#more {
+  display: none;
+}
 
 @media (max-width: 600px) {
   body {
@@ -104,9 +119,9 @@ div {
     background-image: url(assets/images/emy6-S.jpg);
     padding: 100px;
   }
-  #more {
+  /* #more {
     display: none;
-  }
+  } */
 }
 
 @media (min-width: 601px) and (max-width: 780px) {
@@ -117,9 +132,9 @@ div {
     background-image: url(assets/images/emy6-M.jpg);
     padding: 200px;
   }
-  #more {
+  /* #more {
     display: none;
-  }
+  } */
 }
 
 @media (min-width: 781px) {
