@@ -107,6 +107,44 @@ div {
   
 }
 
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+a {
+  padding: 5px;
+  color: #9cff8c;
+}
+
+.button {
+  text-decoration: none;
+  border: 3px solid #75ed639f;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  box-shadow: 1 1 20 10px #75ed639f;
+}
+
+.button:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( 110deg, transparent, #75ed639f, transparent );
+  transition: all 750ms;
+}
+
+.button:hover:before {
+  left: 100%;
+}
 #more {
   display: none;
 }
