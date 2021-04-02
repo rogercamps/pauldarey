@@ -13,3 +13,4 @@ function readMore() {
       moreText.style.display = "inline";
   }
 }
+
