@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Paul Darey</title>
+  <link rel="shortcut icon" type="image/svg" href="assets/images/paul_darey_logo.svg" class="logo_svg"/>
   <script src="scripts/readMore.js"></script>
-  <script src="scripts/burgerBtn.js"></script>
+  <script src="scripts/burgerBtn.js" defer></script>
 </head>
 <body>
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#music">Music</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <header class="header">
+    <a href="#"><img src="assets/images/paul_darey_logo.svg" alt="Paul Darey logo" class="logo_svg">
+    </a>
     <div class="menu-btn">
       <div class="menu-btn_burger"></div>
     </div>
-  </nav>
-
-  <div class="large-hero">
- 
-  </div>
+    <ul class="menu-items">
+      <li><a href="#about" class="menu-item">About</a></li>
+      <li><a href="#music" class="menu-item">Music</a></li>
+      <li><a href="#contact" class="menu-item">Contact</a></li>
+    </ul>
+  </header>
+  <section class="section hero-section">
+    <div class="hero-col">
+      <!-- PICTURE GOES HERE with alt text -->
+      <h1>Patterns</h1>
+    </div>
+  </section>
   <h1>Paul Darey</h1>
+  <section class="section bio-section">
 
   <div class="about body-margin">
     <a name="about"></a>
@@ -53,6 +59,8 @@
       </div>
 
   </div>
+</section>
+<section class="media-section">
   <div class="media-players">
     <div class="music body-margin">
       <div class="spotify-player media-player">
@@ -62,14 +70,15 @@
         <iframe src="https://open.spotify.com/embed/playlist/4TKxpmssZzdmLC8WmVyc9e" width="240" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
       <div class="spotify-player media-player">
-        <a class="twitter-timeline" href="https://twitter.com/PAULDAREY?ref_src=twsrc%5Etfw" width="240" height="380">Tweets by PAULDAREY</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-lang="en" data-width="240" data-height="380" data-dnt="true" data-theme="dark" href="https://twitter.com/PAULDAREY?ref_src=twsrc%5Etfw">Tweets by PAULDAREY</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
+ 
     </div>
   </div>
-<!-- 
+</section>
   <div class="contact body-margin">
     BOOKINGS: click <a href="mailto:oliver@peacockdjagency.com" name="contact">here </a>to email me to oliver@peacockdjagency.com
-  </div> -->
+  </div>
 
   <footer>
     <p>
