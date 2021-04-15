@@ -11,16 +11,15 @@
 body {
   font-family: Montserrat, sans-serif;
   background-color: black;
-  /* text-align: justify; */
+  text-align: justify;
   /* margin: 0%; */
   /* padding: 0%; */
-  /* color: yellow; */
+  color: yellow;
   
 }
 
 .logo_svg {
   max-width: 15%;
-  filter: invert(1);
 }
 
 .header {
@@ -79,88 +78,42 @@ body {
   padding: clamp(1rem, 8vw, 5rem);
 }
 
-.hero-section {
-  /* width: clamp  */
-}
-
 .bio-section {
   display: block;
   height: auto;
 }
 
-.custom-shape-divider-bottom-1617761559 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1617761559 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 128px;
-}
-
-.custom-shape-divider-bottom-1617761559 .shape-fill {
-  fill: #c556bc;
-}
-
 .media-section {
   display: block;
   height: auto;
+  position: relative;
+  color: grey;
+  background-color: #020202;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23302f31' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-/** For mobile devices **/
-@media (max-width: 767px) {
-  .custom-shape-divider-bottom-1617761559 svg {
-      width: calc(100% + 1.3px);
-      height: 122px;
-  }
+.contact {
+  text-align: center;
 }
 
 footer {
-  background-color: #A0A0A0	;
+  background-color: #A0A0A0;
+  color: black;
   margin: 0;
-  padding: 0;
+  padding: 5%;
   float: left;
   width: 100%;
   text-align: center;
 }
 
-
 .body-margin {
   margin: 5%;
-
 }
-
-/* input {
-  border-radius: 5px;
-} */
-
-/* li {
-  display: inline;
-} */
-
-/* li a {
-  padding: 8px;
-} */
 
 h1 {
   padding: 15px;
   text-align: center;
 }
-
-/* div {
-  margin-bottom: 10px;
-} */
-
-/* .music {
-  color: black;
-  text-decoration: none;
-} */
 
 .media-players {
   display: flex;
@@ -175,52 +128,76 @@ h1 {
   margin: 10px;
   float: left;
   align-items: center;
-  
 }
 
-/* .btn-container {
+.btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
-} */
+  margin: 5%;
+  padding: 5%;
+}
 
-/* a {
-  padding: 5px;
-  color: #C0C0C0
-} */
+  /* BURGER MENU  */
+  .menu-btn {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+    -webkit-tap-highlight-color: transparent;
+  }
 
-/* button {
-  background: transparent;
-  color: white;
-  outline: none;
-  padding: 15px;
-  border-radius: 10px;
-} */
+  .menu-btn_burger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn_burger::before,
+  .menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47,.2);
+    transition: all .5s ease-in-out;
+  }
 
-/* .button {
-  text-decoration: none;
-  border: 3px solid black;
-  border-radius: 10px;
-  position: relative;
-  overflow: hidden;
-} */
+  .menu-btn_burger::before {
+    transform: translateY(-16px);
+  }
+  .menu-btn_burger::after {
+    transform: translateY(16px);
+  }
 
+  /* burger animation */
+  .menu-btn.open .menu-btn_burger {
+    transform: translateX(-50px);
+    background-color: transparent;
+    box-shadow: none;
+  }
 
-/* #more {
-  display: none;
-} */
+  .menu-btn.open .menu-btn_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+   .menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
 
-
+/* MOBILE */
 @media (max-width: 600px) {
   body {
     color: white;
   }
-  /* .large-hero {
-    background-image: url(assets/images/emy6-S.jpg);
-    padding: 100px;
-  } */
-
 
   .hero-section {
     background-color: #dfdbe5;
@@ -235,78 +212,55 @@ h1 {
     max-width: 35%;
   }
 
-
-  /* .menu-btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    border: 3px solid #fff;
-  } */
-
-  /* .menu-btn_burger {
-    width: 50px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47,.2);
-    transition: all .5s ease-in-out;
-  } */
-  /* .menu-btn_burger::before,
-  .menu-btn_burger::after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 6px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47,.2);
-    transition: all .5s ease-in-out;
-  } */
-
-  /* .menu-btn_burger::before {
-    transform: translateY(-16px);
-  } */
-  /* .menu-btn_burger::after {
-    transform: translateY(16px);
-  } */
-
-  /* burger animation */
-
-  /* .menu-btn.open .menu-btn_burger {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-  } */
-
-  /* .menu-btn.open .menu-btn_burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-  } */
-  /* .menu-btn.open .menu-btn_burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-  } */
-
   .media-player {
     float: initial;
   }
+  
+  .menu-btn {
+    display: flex;
+  }
+  .menu-items {
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(100vw);
+    background-color: grey;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .menu-items.open {
+    transform: translateX(0);
+  }
+
+  .menu-items li {
+    width: 100vw;
+    height: 100%;
+  }
+  .menu-items li a {
+    color: #fff;
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menu-items li a:hover {
+    color: #111
+  }
 }
 
-
-
-
-
+/* TABLET */
 @media (min-width: 601px) and (max-width: 780px) {
   body {
     color: red;
   }
-  /* .large-hero {
-    background-image: url(assets/images/emy6-M.jpg);
-    padding: 200px;
-  } */
 
   .hero-section {
     background-color: #dfdbe5;
@@ -317,16 +271,15 @@ h1 {
     /* height: auto; */
     /* position: absolute; */
   }
+  .logo_svg {
+    max-width: 35%;
+  }
 }
-
+/* DESKTOP */
 @media (min-width: 781px) {
   body {
     color: green;
   }
-  /* .large-hero {
-    background-image: url(assets/images/emy6-L.jpg);
-    padding: 300px;
-  } */
 
   .hero-section {
     background-color: #dfdbe5;
@@ -337,17 +290,4 @@ h1 {
     /* height: auto; */
     /* position: absolute; */
   }
-
-}
-
-
-
-/*  USE THIS TO HIDE THE BURGER MENU WHEN IS BIGGER THAN MOBILE ?
-@media screen and (max-width: 600px) {
-  div.example {
-    display: none;
-  }
-}
- */
-
-
+};
