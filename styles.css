@@ -326,13 +326,12 @@ h1 {
   .logo_svg {
     max-width: 35%;
   }
-
+  
   .media-player {
     display: inline-block;
-    float: initial;
   }
   .media-player-pairs {
-    /* display: inline-block; */
+    display: inline;
   }
 }
 /* DESKTOP */
@@ -350,7 +349,10 @@ h1 {
     /* height: auto; */
     /* position: absolute; */
   }
-
+  /* .media-players {
+    margin-left: 10px;
+    margin-right: 10px;
+  } */
   .media-players-pair1 {
     display: block;
     float: left;
@@ -363,3 +365,13 @@ h1 {
 
 
 };
+
+
+
+Earlier today, sunrise at Burriac Castle.
+Photo credit: @joanluque 
+
+
+
+
+#Catalunya #Catalonia #Burriac #Castle #Maresme #sunrise
