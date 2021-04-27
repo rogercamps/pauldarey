@@ -234,6 +234,10 @@ h1 {
   .social-media-logo {
     max-width: 35px;
     min-width: 35px;
+    
+  }
+
+  .social-media-icons-spacing-span {
     margin: 15px;
   }
 
