@@ -234,9 +234,24 @@ h1 {
   .social-media-logo {
     max-width: 35px;
     min-width: 35px;
-    filter: invert(1);
-    margin: 10px;
+    margin: 15px;
   }
+
+  .icon-instagram:hover {
+    filter: invert(25%) sepia(49%) saturate(4775%) hue-rotate(301deg) brightness(87%) contrast(93%);
+  }
+
+  .icon-facebook:hover {
+    filter: invert(0.6) sepia(1) saturate(5) hue-rotate(175deg);
+  }
+  .icon-soundcloud:hover {
+    /* filter: invert(0.5) sepia(.5) saturate(9) hue-rotate(28deg); */
+    filter: invert(52%) sepia(54%) saturate(4039%) hue-rotate(2deg) brightness(105%) contrast(105%)
+  }
+  .icon-spotify:hover {
+    filter: invert(0.5) sepia(1) saturate(5) hue-rotate(70deg);
+  }
+
 
 /* MOBILE */
 @media (max-width: 650px) {
@@ -365,13 +380,3 @@ h1 {
 
 
 };
-
-
-
-Earlier today, sunrise at Burriac Castle.
-Photo credit: @joanluque 
-
-
-
-
-#Catalunya #Catalonia #Burriac #Castle #Maresme #sunrise
